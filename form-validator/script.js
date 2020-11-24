@@ -83,7 +83,6 @@ form.addEventListener("submit", function(event) {
   checkEmail(email);
   checkPasswordsMatch(password, passwordCheck)
 
-  checkTotalSuccess([username, email, password, passwordCheck])
   if(checkTotalSuccess([username, email, password, passwordCheck])){
     event.submitter.innerText = 'Registered!'
     event.submitter.style.backgroundColor = 'MediumSpringGreen';
